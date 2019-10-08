@@ -6,6 +6,12 @@
   </head>
   <body>
     <h1><%= title %></h1>
-    <p>Welcome to <%= login_id %></p>
+    <% if(login_id){%>
+      <p>Welcome to <%= login_id %></p>
+      <a href='/logout'>Logout</a>
+    <% }else{ %>
+      <p>Please login...</p>
+      <a href='/login'>Go to Login Page</a>
+    <% } %>
   </body>
 </html>
