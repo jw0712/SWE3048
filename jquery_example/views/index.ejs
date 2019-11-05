@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+    <h1 id="h1_main"><%= title %></h1>
+    <h1>other</h1>
+    <p>Welcome to <%= title %></p>
+    <img id="img_logo" src="images/google_logo.jpg" alt="logo"/>
+    <ul id="list">
+      <li>사과</li>
+      <li>배</li>
+    </ul>
+    <button type="button" id="btn_01">수정</button>
+  </body>
+  <script>
+    $("#btn_01").click(function(){
+      $("#list").append("<li>수박</li>");
+      $("#h1_main").html("<strong>환영해요</strong>");
+      $("img_logo").attr("src","google_logo.jpg");
+    });
+    /*
+    $(document).ready(function(){
+      $("#list").append("<li>수박</li>");
+      //alert("jQuery2");
+      //$("h1").text("환영해요");
+      $("#h1_main").html("<strong>환영해요</strong>");
+      $("img_logo").attr("src","google_logo.jpg");
+    }); */
+    </script>
+</html>
