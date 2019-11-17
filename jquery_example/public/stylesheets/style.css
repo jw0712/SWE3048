@@ -6,3 +6,15 @@ body {
 a {
   color: #00B7FF;
 }
+
+.text_red{
+  color: red;
+}
+
+.text_green{
+  color: #00FF00;
+}
+
+.bg_red{
+  background-color: whitesmoke;
+}
